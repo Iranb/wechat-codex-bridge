@@ -1,0 +1,37 @@
+# Local credentials and runtime data
+.env
+.env.*
+!.env.example
+**/auth.json
+**/auth.json.*
+**/state.json
+**/state.json.*
+**/codex-session.json
+**/codex-session.json.*
+**/native-codex.json
+**/native-codex.json.*
+**/claim.json
+**/outbox.json
+**/worker.json
+**/exec-final.txt
+**/probe_*.txt
+**/attachments/
+**/wechat-codex-receive-*/
+**/dot-wechat-receive-*/
+*.log
+*.sock
+*.lock
+*.pem
+*.key
+data/
+runtime/
+private/
+
+# Local dependencies and generated files
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+coverage/
+.DS_Store
+bin/

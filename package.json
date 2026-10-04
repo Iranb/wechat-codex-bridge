@@ -1,0 +1,25 @@
+{
+  "name": "wechat-codex-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Owner-bound WeChat messaging bridge for a dedicated Codex CLI session",
+  "license": "MIT",
+  "type": "module",
+  "repository": { "type": "git", "url": "https://github.com/Iranb/wechat-codex-bridge.git" },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "check:release": "node scripts/check-release.mjs",
+    "login": "node src/setup.mjs login",
+    "bind": "node src/setup.mjs bind",
+    "start:local": "node src/main.mjs --live --mode local-queue",
+    "local": "node src/local.mjs",
+    "activate": "node src/local.mjs activate --live",
+    "session:init": "node src/init.mjs --live",
+    "exec:prepare": "node src/exec.mjs prepare --live",
+    "exec:run": "node src/exec.mjs run --live",
+    "exec:start": "node src/exec-runtime.mjs start --live",
+    "exec:stop": "node src/exec-runtime.mjs stop --live",
+    "exec:status": "node src/exec-runtime.mjs status --live"
+  },
+  "engines": { "node": ">=22" }
+}

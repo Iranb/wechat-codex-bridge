@@ -1,0 +1,12 @@
+wechat-codex-bridge
+Copyright (c) 2026 Iranb. Licensed under the MIT License; see LICENSE.
+
+The WeChat protocol implementation references Tencent's public
+openclaw-weixin protocol documentation:
+https://github.com/Tencent/openclaw-weixin/blob/main/docs/protocol.md
+That upstream project is Copyright (C) 2026 Tencent and MIT licensed.
+
+Codex CLI is an external runtime dependency. This repository does not bundle
+Codex CLI, an MCP tunnel executable, the Python websockets package, account
+credentials, or model weights. Each external dependency retains its own
+license and applicable service terms.
